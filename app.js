@@ -1,18 +1,33 @@
-// Shared behaviour for every page of the portfolio.
+// Behaviour for the single-page portfolio.
 
-// Mobile menu
+// Mobile menu (closes again once a section is picked)
 const menuBtn = document.getElementById('menu-btn');
 const links = document.getElementById('links');
+const setMenu = open => {
+  links.classList.toggle('open', open);
+  menuBtn.setAttribute('aria-expanded', open);
+};
 if (menuBtn) {
-  menuBtn.addEventListener('click', () => {
-    const open = links.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', open);
-  });
+  menuBtn.addEventListener('click', () => setMenu(!links.classList.contains('open')));
+  links.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
 }
 
-// Nav gets a border once the page is scrolled
+// Nav gets a border once the page is scrolled, and highlights the section in view
 const nav = document.querySelector('.site-nav');
-const onScroll = () => nav.classList.toggle('solid', window.scrollY > 10);
+const navLinks = [...document.querySelectorAll('.links a[href^="#"]')];
+const sections = navLinks.map(a => document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
+const onScroll = () => {
+  nav.classList.toggle('solid', window.scrollY > 10);
+  const line = nav.offsetHeight + 40;
+  const atEnd = innerHeight + scrollY >= document.documentElement.scrollHeight - 4;
+  let current = sections[0];
+  sections.forEach(s => { if (s.getBoundingClientRect().top <= line) current = s; });
+  if (atEnd) current = sections[sections.length - 1];
+  navLinks.forEach(a => {
+    if (a.getAttribute('href') === '#' + current.id) a.setAttribute('aria-current', 'true');
+    else a.removeAttribute('aria-current');
+  });
+};
 addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
