@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects · Agnes Sidabutar</title>
+<meta name="description" content="Projects by Agnes Elyestra Sidabutar: APM Dashboard, Ambarita Digital, Dentalogic8, Glioma Classification and Luminous.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-bug" viewBox="0 0 24 24"><rect x="7" y="8" width="10" height="12" rx="5"/><path d="M12 8V5M9 5l1.5 2M15 5l-1.5 2M3 13h4M17 13h4M4 19l3-2M20 19l-3-2M4 8l3 2M20 8l-3 2"/></symbol>
+  <symbol id="i-ship" viewBox="0 0 24 24"><path d="M3 17l2 3h14l2-3-9-3z"/><path d="M6 15V9h12v6M12 4v5"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></symbol>
+  <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a2 2 0 0 0-3-1zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+</svg>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="foto-profil.jpg" alt="">Agnes Sidabutar</a>
+    <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="links"><svg class="i"><use href="#i-menu"/></svg></button>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-head" style="--h1:#f3e9e1;--h2:#f6ece2;--h3:#f4ebe6">
+    <div class="wrap">
+      <div class="crumb"><a href="index.html">Home</a> / Projects</div>
+      <h1>Projects</h1>
+      <p>A governance tool built at work, plus team projects across mobile, web and machine learning, often with me owning the quality side.</p>
+      <div class="jump">
+        <a class="chip t-sky" href="#apm">APM Dashboard</a>
+        <a class="chip t-mint" href="#ambarita">Ambarita Digital</a>
+        <a class="chip t-lilac" href="#dentalogic8">Dentalogic8</a>
+        <a class="chip t-peach" href="#more">Glioma · Luminous</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="first">
+
+      <!-- APM -->
+      <article class="card proj feature t-sky reveal" id="apm">
+        <div class="shots">
+          <div class="browser">
+            <div class="bar"><i></i><i></i><i></i><span id="shot-url">apm-dashboard / overview</span></div>
+            <button class="shot-view" id="shot-open" aria-label="Enlarge screenshot">
+              <img id="shot-img" src="img/apm-overview.jpg" alt="APM Dashboard overview page">
+            </button>
+          </div>
+          <div class="shot-tabs" role="group" aria-label="APM Dashboard screens">
+            <button aria-selected="true" data-src="img/apm-overview.jpg" data-url="overview" data-alt="APM Dashboard overview page">Portfolio Overview</button>
+            <button aria-selected="false" data-src="img/apm-time.jpg" data-url="time-assessment" data-alt="TIME Assessment scatter matrix">TIME Assessment</button>
+            <button aria-selected="false" data-src="img/apm-roadmap.jpg" data-url="roadmap" data-alt="Roadmap 2025–2029 Gantt view">Roadmap 2025–2029</button>
+          </div>
+          <p class="shot-note">Real screenshots of the dashboard. Sensitive company figures are blurred for confidentiality. Click to enlarge.</p>
+        </div>
+        <div class="body">
+          <span class="badge"><svg class="i" style="width:14px;height:14px"><use href="#i-ship"/></svg>Work project · PT ASDP Indonesia Ferry</span>
+          <div class="proj-head"><h3>APM Dashboard</h3><span class="date">2026</span></div>
+          <div class="kind">Application Portfolio Management · IT Governance tooling</div>
+          <p class="desc">An interactive web dashboard that turns the company's Application Portfolio Management workbook into something leaders can explore: portfolio health, TIME assessment, technology risk, integrations and the modernization roadmap, all in one place.</p>
+          <div class="pipe"><span>Excel workbook</span><i>→</i><span>Python ETL</span><i>→</i><span>JSON snapshot</span><i>→</i><span>React dashboard</span></div>
+          <ul>
+            <li>Wrote a Python (openpyxl) extractor that reads values, formulas and cell colors without modifying the source workbook, then joins the sheets into one dataset.</li>
+            <li>Built 12 modules including Portfolio, TIME Assessment (Business Value × Technical Health), Tech Stack, Integration, Business Capability, Recommendation and Roadmap.</li>
+            <li>Added a <b>Data Integrity</b> view that reconciles the workbook's own dashboard against every row and flags inconsistencies for data owners instead of silently fixing them.</li>
+            <li>Ships as a single offline HTML file, embedded as the APM module of the PlanGov (Planning &amp; Governance) portal prototype.</li>
+          </ul>
+          <div class="tags"><span class="tag">React 18</span><span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">Tailwind CSS</span><span class="tag">Apache ECharts</span><span class="tag">Python</span><span class="tag">openpyxl</span></div>
+        </div>
+        <div class="visual">
+          <div class="vrow"><span>Dashboard modules</span><strong>12</strong></div>
+          <div class="vrow"><span>Framework</span><strong>Gartner TIME</strong></div>
+          <div class="vrow"><span>Roadmap horizon</span><strong>2025–2029</strong></div>
+          <div class="vrow"><span>Backend needed</span><strong>None</strong></div>
+          <div class="vrow"><span>Values invented</span><strong>0</strong></div>
+        </div>
+      </article>
+
+      <!-- Ambarita -->
+      <article class="card proj feature flip t-mint reveal" id="ambarita">
+        <div class="body">
+          <span class="badge"><svg class="i" style="width:14px;height:14px"><use href="#i-bug"/></svg>QA lead · Team project</span>
+          <div class="proj-head"><h3>Ambarita Digital</h3><span class="date">01/2025 – 06/2025</span></div>
+          <div class="kind">Digital village platform · Laravel web admin + Flutter mobile app</div>
+          <p class="desc">Brings village services to residents' phones in Ambarita, Samosir: read news and announcements, shop local UMKM products and request official letters online, while village staff manage everything from a web admin.</p>
+          <ul>
+            <li>Designed the system architecture, workflows and business processes.</li>
+            <li>Online letter requests (domicile and single-status letters) generated automatically as PDF/Word from templates.</li>
+            <li>UMKM marketplace with products, orders and QRIS payment; push notifications through Firebase Cloud Messaging.</li>
+            <li><b>Led QA</b> with Cypress (web E2E) and Appium (Android/iOS UI automation) for login, notifications and cross-device compatibility.</li>
+          </ul>
+          <div class="tags"><span class="tag">Laravel 10</span><span class="tag">Flutter</span><span class="tag">Sanctum API</span><span class="tag">Firebase FCM</span><span class="tag">DomPDF</span><span class="tag">Cypress</span><span class="tag">Appium</span></div>
+        </div>
+        <div class="visual">
+          <div class="app-id"><img src="img/ambarita-logo.png" alt="Ambarita Digital logo"><div><b>Ambarita Digital</b><small>Village services in one app</small></div></div>
+          <figure class="scene"><img src="img/ambarita-cover.jpg" alt="Ambarita village on the shore of Lake Toba"><figcaption>Ambarita, Lake Toba</figcaption></figure>
+          <div class="vrow"><span>Platforms</span><strong>Web + Android/iOS</strong></div>
+          <div class="vrow"><span>Services</span><strong>Letters · UMKM · News</strong></div>
+          <div class="vrow"><span>Test automation</span><strong>Cypress + Appium</strong></div>
+        </div>
+      </article>
+
+      <!-- Dentalogic8 -->
+      <article class="card proj feature t-lilac reveal" id="dentalogic8">
+        <div class="body">
+          <span class="badge"><svg class="i" style="width:14px;height:14px"><use href="#i-award"/></svg>Featured · AI/ML</span>
+          <div class="proj-head"><h3>Dentalogic8</h3><span class="date">08/2025 – Present</span></div>
+          <div class="kind">Mobile app · AI/ML model</div>
+          <p class="desc">Detects dental caries from intraoral photos, classifies them on the ICDAS scale (D0–D6) and recommends treatment, built for people with limited access to dental care. The AI runs fully on the phone, so no internet connection is needed.</p>
+          <ul>
+            <li>Benchmarked YOLOv12 variants combining 3 backbones (R-ELAN, MobileNetV3-small, EfficientNetB0) with 3 necks (FPN, BiFPN, PANet), tuned with Optuna on an NVIDIA H200.</li>
+            <li>Exported the best model to ONNX for <b>on-device inference</b> and built two clients: React Native (Expo) and Flutter.</li>
+            <li>Camera scan and photo upload, bounding boxes on detected lesions, analysis detail and saved check-up history.</li>
+            <li>Android APKs split per CPU architecture, with an installation guide for non-technical users.</li>
+          </ul>
+          <div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">Flutter</span><span class="tag">PyTorch</span><span class="tag">YOLOv12</span><span class="tag">ONNX Runtime</span><span class="tag">Optuna</span><span class="tag">OpenCV</span></div>
+        </div>
+        <div class="visual">
+          <div class="app-id"><img src="img/dentalogic-logo.jpg" alt="Dentalogic8 app icon"><div><b>Dentalogic8</b><small>On-device caries detection</small></div></div>
+          <div class="vrow"><span>Images in dataset</span><strong>6,313</strong></div>
+          <div class="vrow"><span>Architecture combinations</span><strong>3 × 3</strong></div>
+          <div class="vrow"><span>Optuna trials · epochs</span><strong>20 · 400</strong></div>
+          <div class="vrow"><span>Classes (ICDAS)</span><strong>D0–D6</strong></div>
+        </div>
+      </article>
+
+      <div class="grid2" id="more">
+        <article class="card proj t-peach reveal">
+          <div class="proj-icon"><svg class="i"><use href="#i-brain"/></svg></div>
+          <div class="proj-head"><h3>Glioma Classification</h3><span class="date">10/2025 – Present</span></div>
+          <div class="kind">Website · AI/ML model</div>
+          <p class="desc">Classifies Lower-Grade Glioma (LGG) vs Glioblastoma Multiforme (GBM) from clinical and genomic data.</p>
+          <ul>
+            <li>Preprocessed clinical/genomic features for glioma grading.</li>
+            <li>Implemented a Multi-Layer Perceptron to capture non-linear patterns in tabular data.</li>
+            <li>Explored ensemble methods for tumor severity prediction.</li>
+          </ul>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Jupyter</span><span class="tag">MLP</span></div>
+        </article>
+        <article class="card proj t-pink reveal">
+          <div class="proj-icon"><svg class="i"><use href="#i-bag"/></svg></div>
+          <div class="proj-head"><h3>Luminous</h3><span class="date">10/2024 – 12/2024</span></div>
+          <div class="kind">Mobile e-commerce</div>
+          <p class="desc">A shopping app with a complete customer flow and an admin side for products and orders.</p>
+          <ul>
+            <li>Built login, product listing and detail, favorites, cart and checkout.</li>
+            <li>Admin module for product CRUD, image upload and real-time orders.</li>
+            <li>Connected to Firestore / Realtime Database for live updates.</li>
+          </ul>
+          <div class="tags"><span class="tag">Mobile</span><span class="tag">Firebase</span><span class="tag">Firestore</span></div>
+        </article>
+      </div>
+    </section>
+
+    <div class="band reveal">
+      <h2>Like what you see?</h2>
+      <p>I'd be happy to walk you through any of these projects.</p>
+      <div class="cta"><a class="btn primary" href="contact.html"><svg class="i"><use href="#i-mail"/></svg>Contact me</a></div>
+    </div>
+  </div>
+</main>
+
+<div class="lightbox" id="lightbox" hidden><img alt=""></div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Agnes Elyestra Sidabutar · Jakarta, Indonesia</span>
+    <nav class="foot-links" aria-label="Footer"><a href="index.html">Home</a><a href="experience.html">Experience</a><a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
